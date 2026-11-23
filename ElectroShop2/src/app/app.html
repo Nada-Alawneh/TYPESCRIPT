@@ -1,0 +1,33 @@
+<header>
+<h1>{{ storeName }}</h1>
+<p>{{ storeDescription }}</p>
+<p>{{ storeAddress }}</p>
+<p>Total Products: {{ totalProducts }}</p>
+<p class="store-status">{{ isStoreOpen ? 'We Are Open' : 'We Are Closed' }}</p>
+<p>Currency: {{ currency }}</p>
+</header>
+
+<!-- Featured Product -->
+<section class="featured">
+<h2>Featured Product</h2>
+<p>{{ featuredProduct.name }}</p>
+<p>{{ featuredProduct.price | currency:currency }}</p>
+<p>{{ featuredProduct.description }}</p>
+<p>{{ finalPrice | currency:currency }} {{ discountPercentage }}% Discount</p>
+</section>
+
+  <section>
+    <h2>Our Products</h2>
+    <p>{{productNames[0]}} : ${{productPrices[0]}}</p>
+    <p>{{productNames[1]}} : ${{productPrices[1]}}</p>
+    <p>{{productNames[2]}} : ${{productPrices[2]}}</p>
+    <p>{{productNames[3]}} : ${{productPrices[3]}}</p>
+  </section>
+
+<section>
+<h2>Store Summary</h2>
+<p>Total Products: {{ productCount }}</p>
+<p>Highest Price: {{ highestPrice | currency:currency }}</p>
+<p>Lowest Price: {{ lowestPrice | currency:currency }}</p>
+<p>Total Products Value: {{ totalProductsValue | currency:currency }}</p>
+</section>

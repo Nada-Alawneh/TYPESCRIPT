@@ -1,0 +1,54 @@
+
+:host {
+  display: block;
+  max-width: 680px;
+  margin: 24px auto;
+  padding: 0 12px;
+  color: #263449;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  text-align: center;
+}
+
+header,
+section {
+  padding: 20px;
+  margin-bottom: 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+header {
+  background: #eff6ff;
+}
+
+h1,
+h2 {
+  margin: 0 0 8px;
+  color: #1e3a5f;
+}
+
+p {
+  margin: 6px 0;
+}
+
+.store-status {
+  font-weight: bold;
+  color: #1d4ed8;
+}
+
+.featured {
+  background: #f8fafc;
+}
+
+.product {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  padding: 8px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.product:last-child {
+  border-bottom: 0;
+}
