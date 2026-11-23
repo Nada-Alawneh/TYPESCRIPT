@@ -63,7 +63,7 @@ function checkProductAvailability(quantity) {
         return "Out of Stock";
     }
 }
-checkProductAvailability(100);
+console.log(checkProductAvailability(100));
 function displayStoreMessage(message) {
     console.log(message);
 }
