@@ -1,0 +1,38 @@
+div {
+  display: grid;
+  grid-template-columns: minmax(0, 320px) minmax(0, 1fr);
+  align-items: center;
+  gap: 9px 28px;
+  padding: clamp(16px, 3vw, 26px);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: white;
+  font-size: 1.15rem;
+  font-weight: 650;
+}
+
+img {
+  grid-column: 1;
+  grid-row: 1 / span 5;
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  border-radius: 12px;
+}
+
+p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+@media (max-width: 620px) {
+  div {
+    grid-template-columns: 1fr;
+  }
+
+  img {
+    grid-row: auto;
+  }
+}

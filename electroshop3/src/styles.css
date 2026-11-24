@@ -1,0 +1,27 @@
+:root {
+  color-scheme: light;
+  --ink: #17342e;
+  --muted: #526b63;
+  --accent: #205e4d;
+  --line: #dce7e1;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  color: var(--ink);
+  background: #f4f8f5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+button {
+  font: inherit;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}

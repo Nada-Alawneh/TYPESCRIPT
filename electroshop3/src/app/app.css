@@ -1,0 +1,18 @@
+:host {
+  display: block;
+  max-width: 1260px;
+  margin-inline: auto;
+  padding: clamp(16px, 4vw, 48px);
+}
+
+main {
+  display: grid;
+  gap: 32px;
+  margin-block: 30px;
+}
+
+h2 {
+  margin: 0 0 14px;
+  font-size: 1.35rem;
+  letter-spacing: -0.025em;
+}

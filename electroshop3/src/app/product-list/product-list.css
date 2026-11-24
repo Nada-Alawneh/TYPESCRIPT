@@ -1,0 +1,45 @@
+:host {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(185px, 100%), 1fr));
+  gap: 14px;
+}
+
+:host > div {
+  display: grid;
+  grid-template-rows: auto 120px auto;
+  gap: 12px;
+  padding: 15px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: white;
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 0 3px 12px #17342e08;
+}
+
+img {
+  width: 100%;
+  height: 120px;
+  object-fit: contain;
+}
+
+button {
+  padding: 9px 12px;
+  border: 0;
+  border-radius: 9px;
+  background: var(--accent);
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+  background: #174b3d;
+}
+
+button:disabled {
+  background: #e9eeeb;
+  color: #5e7068;
+  cursor: default;
+}
