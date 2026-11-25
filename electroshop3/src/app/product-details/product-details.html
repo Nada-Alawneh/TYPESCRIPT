@@ -1,8 +1,13 @@
 <div>
 {{productName}} - ${{productPrice}}
-  <img [src]="productImage" alt="{{productName}}">
   <p>{{productDescription}}</p>
-  <p>Quantity: {{quantity}}</p>
   <p>{{ isAvailable ? 'Available' : 'Out of Stock' }}</p>
-  <p>Discount: {{discountPercentage}}%</p>
+
+  <p>
+  Quantity:
+  <button type="button" (click)="decreaseQuantity()">−</button>
+  {{ quantity() }}
+  <button type="button" (click)="increaseQuantity()">+ </button>
+  <button type="button" (click)="addToCart()">Add to Cart</button>
+
 </div>

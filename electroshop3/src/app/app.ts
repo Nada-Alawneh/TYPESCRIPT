@@ -8,4 +8,10 @@ import { Component, signal } from '@angular/core';
 })
 export class App {
   protected readonly title = signal('electroshop3');
+ productName = signal<string>('Wireless Headphones');
+productDescription = signal<string>('Bluetooth Headphones');
+productPrice = signal<number>(120);
+isAvailable = signal<boolean>(true);
+
+  selectedItem: { productName: string; quantity: number } | null = null;
 }

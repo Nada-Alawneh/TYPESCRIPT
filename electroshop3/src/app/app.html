@@ -9,8 +9,25 @@
 
   <section aria-labelledby="details-heading">
     <h2 id="details-heading">Product details</h2>
-    <app-product-details></app-product-details>
+    <app-product-details
+  [productName]="productName()"
+  [productDescription]="productDescription()"
+  [productPrice]="productPrice()"
+  [isAvailable]="isAvailable()"
+
+  (itemAdded)="selectedItem = $event"
+></app-product-details>
   </section>
+
+
+@if (selectedItem; as item) {
+  <app-shopping-cart
+    [productName]="item.productName"
+    [productPrice]="productPrice()"
+    [quantity]="item.quantity"
+  ></app-shopping-cart>
+}
+   
 </main>
 
 <app-footer></app-footer>
